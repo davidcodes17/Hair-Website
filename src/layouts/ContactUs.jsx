@@ -7,29 +7,36 @@ import {
   Heading,
   Input,
   Textarea,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
 } from "@chakra-ui/react";
 import React from "react";
 
 const ContactUs = () => {
   return (
     <Box id="Contact" pb={20}>
-      <Heading textAlign={"center"} fontSize={60} pb={10}>
+      <Heading textAlign={"center"} fontSize={{lg : 60, md : 50, sm : 40, base : 25}} pb={10}>
         Connect with Us
       </Heading>
-      <Flex flexWrap={{lg : "nowrap", md : "nowrap", sm : "wrap", base : "wrap"}} justifyContent={"center"} gap={10} alignItems={"center"}>
-        <Box width={500} borderRadius={10} height={550} bg={"#ddd"}></Box>
-        <Box boxShadow={"0px 0px 10px #eee"} p={10} borderRadius={10}>
+      <Flex flexWrap={{lg : "nowrap", md : "nowrap", sm : "wrap", base : "wrap"}} px={{lg : 0, md : 0, sm : 5, base : 5}} justifyContent={"center"} gap={10} alignItems={"center"}>
+        <Box width={{lg : 500,md: 400, sm : "100%", base : "100%"}} borderRadius={10} height={{lg : 550, md: 400, sm : 300, base : 300}} bg={"#ddd"}></Box>
+        <Box boxShadow={"0px 0px 10px #eee"} p={10} width={{lg : 500, md : 400, sm : "100%", base : "100%"}} borderRadius={10}>
           <FormControl>
             <FormLabel>Name</FormLabel>
-            <Input type="text" width={400} placeholder="John Doe" />
+            <Input type="text" width={"100%"} placeholder="John Doe" />
           </FormControl>
           <FormControl pt={5}>
             <FormLabel>Phone Number</FormLabel>
-            <Input type="tel" width={400} placeholder="+234" />
+            <Input type="tel" width={"100%"} placeholder="+234" />
           </FormControl>
           <FormControl pt={5}>
             <FormLabel>Email Address</FormLabel>
-            <Input type="email" width={400} placeholder="johndoe@gmail.com" />
+            <Input type="email" width={"100%"} placeholder="johndoe@gmail.com" />
           </FormControl>
           <FormControl pt={5}>
             <FormLabel>Message</FormLabel>
