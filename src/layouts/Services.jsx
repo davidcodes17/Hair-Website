@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import MainText from "../components/MainText";
 
@@ -7,15 +7,15 @@ const Services = () => {
     <Box
       id="Services"
       p={{ lg: 100, md: 80, sm: 50, base: 50 }}
-      my={50}
+      mt={50}
       width={"100vw"}
     >
       <Flex gap={40} justifyContent={"space-between"}>
         <Box>
-          <Heading fontSize={{ lg: 60, md: 50, sm: 40, base: 25 }}>
+          <Heading fontSize={{ lg: 60, md: 50, sm: 40, base: "30px" }}>
             Our Services
           </Heading>
-          <Box py={5} width={{ lg: 400, md: 400, sm: "1005", base: "100%" }}>
+          <Box py={5} width={{ lg: 400, md: 400, sm: "100%", base: "100%" }}>
             <Text fontSize={{ lg: 40, md: "30px", sm: 25, base: 20 }}>
               SENIOR STYLIST{" "}
             </Text>
@@ -86,10 +86,15 @@ and restore hair integrity"
             </Box>
           </Box>
         </Box>
-        <Flex
+        <Grid
           gap={10}
-          flexWrap={"wrap"}
-          display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
+          gridTemplateColumns={{
+            lg: "1fr 1fr",
+            md: "1fr 1fr",
+            sm: "1fr",
+            base: "1fr",
+          }}
+          display={{ lg: "grid", md: "grid", sm: "none", base: "none" }}
         >
           <Image
             width={300}
@@ -175,7 +180,7 @@ and restore hair integrity"
             objectFit={"cover"}
             src="https://img.freepik.com/premium-photo/customer-getting-hairdo-beauty-salon_53876-137846.jpg?size=626&ext=jpg&uid=R92807822&ga=GA1.1.1556962088.1707748675&semt=ais"
           />
-        </Flex>
+        </Grid>
       </Flex>
       <Box>
         <Flex
@@ -183,7 +188,10 @@ and restore hair integrity"
           flexWrap={{ lg: "nowrap", md: "nowrap", sm: "wrap", base: "wrap" }}
           gap={2}
         >
-          <Text fontSize={"30px"} fontWeight={800}>
+          <Text
+            fontSize={{ lg: "30px", md: 20, sm: 20, base: 20 }}
+            fontWeight={800}
+          >
             Smoothing service :{" "}
           </Text>
           <Text fontSize={20}>
@@ -199,7 +207,10 @@ and restore hair integrity"
           natural look and soft texture)
         </Text>
         <Flex alignItems={"center"} flexWrap={"wrap"}>
-          <Text fontSize={"30px"} fontWeight={800}>
+          <Text
+            fontSize={{ lg: "30px", md: 20, sm: 20, base: 20 }}
+            fontWeight={800}
+          >
             EMERGING STYLIST -
           </Text>
           <Text fontSize={20}>
@@ -241,20 +252,30 @@ and restore hair integrity"
             </Box>
           </Box>
         </Box>
-        <Flex gap={10} flexWrap={"wrap"} justifyContent={"center"}>
+        <Grid
+          gap={10}
+          gridTemplateColumns={{
+            lg: "1fr 1fr",
+            md: "1fr 1fr",
+            sm: "1fr",
+            base: "1fr",
+          }}
+          flexWrap={{ lg: "wrap", md: "nowrap", sm: "wrap", base: "wrap" }}
+          justifyContent={"center"}
+        >
           <Image
             width={300}
             height={300}
             borderRadius={20}
             objectFit={"cover"}
-            src="https://littlehairnest.com.au/__static/563c3f0c14e6c12ec01eb3fcffa03dcc/little-hair-nest-low-res-280.jpg"
+            src="https://littlehairnest.com.au/__static/6036f01b99e28652849acc6c31ec5ea1/little-hair-nest-low-res-144.jpg"
           />
           <Image
             width={300}
             height={300}
-            objectFit={"cover"}
             borderRadius={20}
-            src="https://littlehairnest.com.au/__static/44a2e0ba103d17d1253a7c7bef50cc58/little-hair-nest-low-res-161.jpg"
+            objectFit={"cover"}
+            src="https://littlehairnest.com.au/__static/1889a8cfe7fe0ce610842fca30b8cd2f/little-hair-nest-low-res-326.jpg"
           />
           <Image
             width={300}
@@ -275,16 +296,16 @@ and restore hair integrity"
             height={300}
             borderRadius={20}
             objectFit={"cover"}
-            src="https://img.freepik.com/premium-photo/female-client-washes-hair-salon-professional-hairdresser-washes-head-female-client-with-water-shampoo-treatment-hairstyle-beauty-hair-care-fashion-service_357889-5388.jpg?size=626&ext=jpg&uid=R92807822&ga=GA1.1.1556962088.1707748675&semt=ais"
+            src="https://littlehairnest.com.au/__static/6036f01b99e28652849acc6c31ec5ea1/little-hair-nest-low-res-144.jpg"
           />
           <Image
-            borderRadius={20}
             width={300}
             height={300}
+            borderRadius={20}
             objectFit={"cover"}
-            src="https://img.freepik.com/premium-photo/customer-getting-hairdo-beauty-salon_53876-137846.jpg?size=626&ext=jpg&uid=R92807822&ga=GA1.1.1556962088.1707748675&semt=ais"
+            src="https://littlehairnest.com.au/__static/1889a8cfe7fe0ce610842fca30b8cd2f/little-hair-nest-low-res-326.jpg"
           />
-        </Flex>
+        </Grid>
       </Flex>
     </Box>
   );
