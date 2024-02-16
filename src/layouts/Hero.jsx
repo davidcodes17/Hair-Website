@@ -36,7 +36,7 @@ const Hero = () => {
           </Box>
           <Flex my={10} justifyContent={'center'}>
             <Image
-              src="https://img.freepik.com/premium-photo/woman-taking-care-her-afro-hair_23-2149259383.jpg?w=826"
+              src="https://img.freepik.com/free-photo/front-view-bride-getting-ready_23-2149860785.jpg?w=360&t=st=1708107996~exp=1708108596~hmac=d747d7232c1deaee278a7c0598a57a526ef80b043a585db4a12ec85a89a5d976"
               width={{lg : 400, md : 400, sm : 300, base : 300}}
               boxShadow={"-5px 5px 0px #2A283C"}
               height={{lg : 500, md : 400, sm : 300, base : 300}}
