@@ -24,7 +24,7 @@ const ContactUs = () => {
         Connect with Us
       </Heading>
       <Flex flexWrap={{lg : "nowrap", md : "nowrap", sm : "wrap", base : "wrap"}} px={{lg : 0, md : 0, sm : 5, base : 5}} justifyContent={"center"} gap={10} alignItems={"center"}>
-        <Box width={{lg : 500,md: 400, sm : "100%", base : "100%"}} borderRadius={10} height={{lg : 550, md: 400, sm : 300, base : 300}} bg={"#ddd"}></Box>
+        <Box width={{lg : 500,md: 400, sm : "100%", base : "100%"}} borderRadius={10} height={{lg : 550, md: 400, sm : 300, base : 300}} bgImage={"url('/map.png')"}></Box>
         <Box boxShadow={"0px 0px 10px #eee"} p={10} width={{lg : 500, md : 400, sm : "100%", base : "100%"}} borderRadius={10}>
           <FormControl>
             <FormLabel>Name</FormLabel>
