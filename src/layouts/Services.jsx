@@ -226,7 +226,7 @@ and restore hair integrity"
         py={100}
         gap={40}
         justifyContent={"space-between"}
-        flexWrap={"wrap"}
+        flexWrap={{ lg: "nowrap", md: "nowrap", sm: "wrap", base: "wrap" }}
       >
         <Box>
           <Box py={5} width={{ lg: 400, md: 400, sm: 400, base: "100%" }}>
@@ -260,7 +260,6 @@ and restore hair integrity"
             sm: "1fr",
             base: "1fr",
           }}
-          flexWrap={{ lg: "wrap", md: "nowrap", sm: "wrap", base: "wrap" }}
           justifyContent={"center"}
         >
           <Image
